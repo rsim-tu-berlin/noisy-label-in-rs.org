@@ -81,8 +81,8 @@
 
                 <div id="mainText">
                   <h2 class="animate__animated animate__fadeInDown custom-h2">Learning from Noisy Labels in Remote Sensing</h2>
-                  <p class="animate__animated animate__fadeInUp">Deep learning (DL) based methods have recently seen a rise in popularity in the context of remote sensing (RS) image scene classification. Most DL models require huge amounts of annotated images during training to optimize all parameters and reach a high-performance during evaluation. The availability and quality of such data determine the feasibility of many DL models. However, annotating RS images with multi-labels at large-scale to drive DL studies is time consuming, complex, and costly in operational scenarios. To address this issue, vector thematic products (e.g., Corine Land-Cover database) can be used, however the land-use land-cover labels through these products can be incomplete and noisy. Handling data with incomplete and noisy labels may result in uncertainty in the classification model and thus may lead to a reduced performance on label prediction.</p>
-                  <p class="animate__animated animate__fadeInUp">To reduce the negative impact of noisy land-cover annotations, at the Remote Sensing Image Analysis (RSiM) group of TU Berlin we research on developing noise robust DL models. </p>
+                  <p class="animate__animated animate__fadeInUp">{{site.description}}</p>
+                  <p class="animate__animated animate__fadeInUp">{{site.description_extra}}</p>
                 </div>
 
               </div>
@@ -258,6 +258,22 @@
           </div>
         </div>
       </section><!-- End Team Section -->
+
+      <!-- ======= Acknowledgement Section ======= -->
+      <section id="acknowledgement" class="acknowledgement section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <p>Acknowledgement</p>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+              This work is supported by the <a href="{{site.links_erc}}" target="_blank">European Research Council (ERC)</a> under the ERC Starting Grant <a href="{{site.links_bigearth}}" target="_blank">BigEarth</a>.
+            </div>
+          </div>
+        </div>
+      </section>
 
       {% include faq.html %}
 
