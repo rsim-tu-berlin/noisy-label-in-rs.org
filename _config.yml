@@ -1,6 +1,20 @@
 title: Noisy Labels in Remote Sensing
 description: >- # this means to ignore newlines until "baseurl:"
-  Noisy Labels in Remote Sensing
+  Deep learning (DL) based methods have recently seen a rise
+  in popularity in the context of remote sensing (RS) image
+  scene classification. Most DL models require huge amounts of
+  annotated images during training to optimize all parameters and
+  reach a high-performance during evaluation. The availability and
+  quality of such data determine the feasibility of many DL models.
+  However, annotating RS images with multi-labels at large-scale
+  to drive DL studies is time consuming, complex, and costly in
+  operational scenarios. To address this issue, vector
+  thematic products (e.g., Corine Land-Cover database)
+  can be used, however the land-use land-cover labels
+  through these products can be incomplete and noisy. Handling
+  data with incomplete and noisy labels may result in uncertainty
+  in the classification model and thus may lead to a reduced
+  performance on label prediction.
 baseurl: ""
 url: https://www.noisy-labels-in-rs.org
 
