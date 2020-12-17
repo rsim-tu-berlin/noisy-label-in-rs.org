@@ -1,9 +1,127 @@
+/* Screens larger than > 840 px */
 .custom-container {
+	width: 80%;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.custom-header-container {
+	max-width: 100%;
+	padding: 0px 50px;
+}
+
+.container > p {
+	line-height: 2em;
+}
+
+.custom-article-box {
+	padding-right: 40px;
+}
+
+/* logo section */
+#logos {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 20px;
+	white-space: nowrap;
+	display: table;
+}
+
+.logo-image {
+	vertical-align: middle;
+	padding: 13px;
+	display: table-cell;
+}
+
+.logo-image img {
 	max-width: 100%;
 }
 
 
+/* Tablet */
+@media (max-width: 840px) {
+	.custom-container {
+		width: 80%;
+	}
 
-.custom-article-box {
-	padding-right: 40px;
+	.custom-header-container {
+		max-width: 100%;
+		padding: 0px 20px;
+	}
+
+	.container > p {
+		line-height: 2em;
+	}
+
+	.custom-h2 {
+		font-size: 14px;
+	}
+
+	/* logo section */
+	#logos {
+		/* height: 105px; */
+		/* background-color: #eee; */
+		white-space: nowrap;
+		width: 100%;
+		display: table;
+	}
+
+	.logo-image {
+		vertical-align: middle;
+		padding: 13px;
+		display: table-cell;
+	}
+
+	.logo-image img {
+		max-width: 100%;
+	}
+}
+
+/* Mobile Phones */
+@media (max-width: 400px) {
+	.custom-container {
+		width: 100%;
+		font-size: 12px;
+	}
+
+	#hero .carousel-container {
+		left: 20px;
+		right: 20px;
+		padding: 0px;
+	}
+
+	#header .logo a {
+	  font-size: 14px;
+	}
+
+	.custom-h2 {
+		font-size: 14px !important;
+	}
+
+	/* logo section */
+	#logos {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		/* height: 105px; */
+		/* background-color: #eee; */
+		white-space: nowrap;
+		width: 100%;
+		display: table;
+	}
+
+	#logo-bigearth {
+		padding-right: 5%;
+	}
+
+	.logo-image {
+		vertical-align: middle;
+		padding: 0px;
+		display: table-cell;
+	}
+
+	.logo-image img {
+		max-width: 100%;
+	}
 }

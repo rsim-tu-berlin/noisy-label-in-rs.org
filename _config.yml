@@ -3,3 +3,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Noisy Labels in Remote Sensing
 baseurl: ""
 url: https://www.noisy-labels-in-rs.org
+
+links_bigearth: https://bigearth.eu
+links_rsim: https://www.rsim.tu-berlin.de/menue/remote_sensing_image_analysis_group/
+links_erc: https://erc.europa.eu
+links_tuberlin: https://tu.berlin

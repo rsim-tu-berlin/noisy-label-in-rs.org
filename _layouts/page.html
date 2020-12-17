@@ -5,13 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>{{title}}</title>
+    <title>{{site.title}}</title>
     <meta name="description" content="Noisy Labels in Remote Sensing">
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.ico" rel="icon">
 
     <meta property="og:title" content="Noisy Labels in Remote Sensing">
     <meta property="og:description" content="Noisy Labels in Remote Sensing">
@@ -36,14 +35,18 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <style type="text/css" media="screen">
-        @import url( assets/css/style.css );
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- <style type="text/css" media="screen">
         @import url( assets/css/custom.css );
-    </style>
+        @import url( assets/css/style.css );
+    </style> -->
   </head>
 
   <body>
     {% include header.html %}
+
     {{content}}
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -54,20 +57,20 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1 -->
           <div class="carousel-item active" style="background-image: url(assets/img/bg.jpg)">
-            <div class="carousel-container">
-              <div class="container text-right" style="max-width: 100%; padding-left: 400px;">
+            <div class="carousel-container custom-carousel-container">
+              <div class="container text-right custom-container">
 
-                <div id="logos" style="position: absolute; top: 20px; right: 0px; height: 110px;">
-                  <img src="./assets/img/logos/BigEarth.png" class="mr-4"/>
-                  <img src="./assets/img/logos/RSiM_1.png" width="180px"/>
-                  <img src="./assets/img/logos/ERC_1.png" />
-                  <img src="./assets/img/logos/TU_Berlin.jpg" width="200px" />
+                <div id="logos">
+                  <div class="logo-image" id="logo-bigearth"><a href="{{site.links_bigearth}}" target="_blank"><img src="./assets/img/logos/BigEarth.png" class="mr-4"/> </a></div>
+                  <div class="logo-image"><a href="{{site.links_rsim}}" target="_blank"><img src="./assets/img/logos/RSiM_1.png" width="180px"/></a></div>
+                  <div class="logo-image"><a href="{{site.links_erc}}" target="_blank"><img src="./assets/img/logos/ERC_1.png" /></a></div>
+                  <div class="logo-image"><a href="{{site.links_tuberlin}}" target="_blank"><img src="./assets/img/logos/TU_Berlin.jpg" width="200px" /></a></div>
                 </div>
 
-                <h2 class="animate__animated animate__fadeInDown">Learning from Noisy Labels in Remote Sensing</h2>
-                  <p class="animate__animated animate__fadeInUp">Deep learning (DL) based methods have recently seen a rise in popularity in the context of remote sensing (RS) image scene classification. Most DL models require huge amounts of annotated images during training to optimize all parameters and reach a high-performance during evaluation. The availability and quality of such data determine the feasibility of many DL models. However, annotating RS images with multi-labels at large-scale to drive DL studies is time consuming, complex, and costly in operational scenarios. To address this issue, vector thematic products (e.g., Corine Land-Cover database) can be used, however the land-use land-cover labels through these products can be incomplete and noisy. Handling data with incomplete and noisy labels may result in uncertainty in the classification model and thus may lead to a reduced performance on label prediction.</p>
-                  <p class="animate__animated animate__fadeInUp">To reduce the negative impact of noisy land-cover annotations, at the Remote Sensing Image Analysis (RSiM) group of TU Berlin we research on developing noise robust DL models. </p>
-                  <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                <h2 class="animate__animated animate__fadeInDown custom-h2">Learning from Noisy Labels in Remote Sensing</h2>
+                <p class="animate__animated animate__fadeInUp">Deep learning (DL) based methods have recently seen a rise in popularity in the context of remote sensing (RS) image scene classification. Most DL models require huge amounts of annotated images during training to optimize all parameters and reach a high-performance during evaluation. The availability and quality of such data determine the feasibility of many DL models. However, annotating RS images with multi-labels at large-scale to drive DL studies is time consuming, complex, and costly in operational scenarios. To address this issue, vector thematic products (e.g., Corine Land-Cover database) can be used, however the land-use land-cover labels through these products can be incomplete and noisy. Handling data with incomplete and noisy labels may result in uncertainty in the classification model and thus may lead to a reduced performance on label prediction.</p>
+                <p class="animate__animated animate__fadeInUp">To reduce the negative impact of noisy land-cover annotations, at the Remote Sensing Image Analysis (RSiM) group of TU Berlin we research on developing noise robust DL models. </p>
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
               </div>
             </div>
           </div>
@@ -121,12 +124,12 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/software_1.png" class="img-fluid" alt="">
+              <img src="assets/img/software_3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4></h4>
-                <p class="custom-article-box">A tool to inject additive and subtractive noise to a multi-label classification dataset</p>
+                <p class="custom-article-box">Label Noise Injection Tools</p>
                 <!-- <a href="assets/img/software_1.png" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a> -->
-                <a href="https://gitlab.tubit.tu-berlin.de/tburgert/multi_label_noise" class="details-link" title="More Details" target="_blank">
+                <a href="https://gitlab.tubit.tu-berlin.de/rsim/label-noise-injection-tools" class="details-link" title="More Details" target="_blank">
                   <i class="icofont-code"></i>
                 </a>
               </div>
