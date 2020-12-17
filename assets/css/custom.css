@@ -38,7 +38,6 @@
 	max-width: 100%;
 }
 
-
 /* Tablet */
 @media (max-width: 840px) {
 	.custom-container {
@@ -60,6 +59,7 @@
 
 	/* logo section */
 	#logos {
+		/* position: absolute; */
 		/* height: 105px; */
 		/* background-color: #eee; */
 		white-space: nowrap;
@@ -79,10 +79,21 @@
 }
 
 /* Mobile Phones */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
 	.custom-container {
 		width: 100%;
+		max-width: 100%;
 		font-size: 12px;
+		padding: 0px 10px;
+	}
+
+	.custom-header-container {
+		max-width: 100%;
+		padding: 0px 20px;
+	}
+
+	#header .logo a {
+		font-size: 14px;
 	}
 
 	#hero .carousel-container {
@@ -91,12 +102,8 @@
 		padding: 0px;
 	}
 
-	#header .logo a {
-	  font-size: 14px;
-	}
-
 	.custom-h2 {
-		font-size: 14px !important;
+		font-size: 12px !important;
 	}
 
 	/* logo section */
@@ -104,8 +111,7 @@
 		position: absolute;
 		top: 0px;
 		right: 0px;
-		/* height: 105px; */
-		/* background-color: #eee; */
+		padding-top: 0px;
 		white-space: nowrap;
 		width: 100%;
 		display: table;
@@ -123,6 +129,15 @@
 
 	.logo-image img {
 		max-width: 100%;
+	}
+
+	#mainText {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	#mainText p {
+		line-height: 1.5em;
 	}
 
 	/* show all the time */
@@ -143,3 +158,4 @@
 	  }
 
 }
+
