@@ -14,6 +14,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   data with incomplete and noisy labels may result in uncertainty
   in the classification model and thus may lead to a reduced
   performance on label prediction.
+short_description: >-
+  Annotating RS images with multi-labels at large-scale to drive DL studies
+  is time consuming, complex, and costly in operational scenarios. To address
+  this issue, existing thematic products (e.g., Corine Land-Cover map) can be
+  used, however the land-use and land-cover labels through these products can be
+  incomplete and noisy. Handling data with incomplete and noisy labels may
+  result in uncertainty in the classification model and thus may lead to a
+  reduced performance on label prediction.
 description_extra: >-
   To reduce the negative impact of noisy land-use and land-cover annotations,
   at the <a href="{{site.links_rsim}}" target="_blank">Remote Sensing Image Analysis (RSiM)</a> group
